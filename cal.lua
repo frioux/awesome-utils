@@ -98,7 +98,7 @@ function register(mywidget, custom_current_day_format)
       switchMonth(-1)
    end),
    awful.button({ }, 2, function()
-       awful.util.spawn("xcal")
+       awful.util.spawn_with_shell("xcal")
    end),
    awful.button({ }, 3, function()
       switchMonth(1)
